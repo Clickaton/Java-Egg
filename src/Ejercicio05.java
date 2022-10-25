@@ -11,19 +11,19 @@ import java.util.Scanner;
  *
  * @author Christian
  */
-public class Ejercicio01 {
+public class Ejercicio05 {
 
     /**
      * @param args the command line arguments
-     * 1. Escribir un programa que pida dos números enteros por teclado y calcule la suma de los
-     * dos. El programa deberá después mostrar el resultado de la suma
+     * 5. Escribir un programa que lea un número entero por teclado y muestre por pantalla el
+     * doble, el triple y la raíz cuadrada de ese número. Nota: investigar la función Math.sqrt().
      */
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese dos números enteros para calcular la suma de ambos:");        
-        int num1 = leer.nextInt(), num2 = leer.nextInt();
-        System.out.println("La suma de " + num1 + " y " + num2 + " es : " + (num1+num2));
+        System.out.println("Ingrese un número entero:");
+        int num = leer.nextInt();
+        System.out.println("El doble de " + num + " Es :" + num*2 + ". El triple es : " + num*3 + ". Y la raíz cuadrada es : " + Math.sqrt(num));
         
     }
     
